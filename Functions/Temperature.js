@@ -4,7 +4,7 @@ str = str.toLowerCase();
 let temp_str = readline.question("Enter temperature: ");
 let temp = parseInt(temp_str);
 // Converts farenheits to degree centigrades temperature
-function FtoDegC(temp) {
+function farenheitToDegreeCentigrade(temp) {
 	if (temp < 32 || temp > 212) {
 		console.log("Invalid input!");
 		return;
@@ -12,7 +12,7 @@ function FtoDegC(temp) {
 	console.log("temp is degC is: " + ((temp - 32) * (5 / 9)));
 }
 // Converts centigrades to farenheits temperature
-function CtoDegF(temp) {
+function centigradeToDegreeFarenheit(temp) {
 	if (temp < 0 || temp > 100) {
 		console.log("Invalid input!");
 		return;
@@ -20,7 +20,7 @@ function CtoDegF(temp) {
 	console.log("temp in degF is: " + ((temp * 9 / 5) + 32));
 }
 if (str == "y") {
-	FtoDegC(temp);
+	farenheitToDegreeCentigrade(temp);
 } else {
-	CtoDegF(temp);
+	centigradeToDegreeFarenheit(temp);
 }
