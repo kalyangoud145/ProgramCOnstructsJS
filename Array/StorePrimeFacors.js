@@ -2,7 +2,6 @@
 const readline = require('readline-sync');
 let number = readline.questionInt("Enter a number: ");
 let array = new Array();
-//if (number / 2) array.push(2);
 for (let i = 2; i <= Math.sqrt(number); i++) {
     while (number % i == 0) {
         array.push(i);
